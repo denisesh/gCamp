@@ -1,58 +1,60 @@
 
 
-<div class="container-fluid">
-  <div class="jumbotron">
-    <h1>gCamp</h1>
-      <p>Your Projects Organized...your way</p>
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <h1>gCamp</h1>
+        <p>Your Projects Organized...your way</p>
+    </div>
   </div>
-</div>
 
-    <div class="row">
-      <div class="col-md-4">
-        <img class ="img-responsive" src="http://ngm.nationalgeographic.com/visions-of-earth/img/1213-poland-skiers-lining-up-670.jpg">
-        <div class="panel panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title">Tasks</h3>
-            </div>
-            <div class="panel-body">
-              Grouped by projects and lists. Just the way you like 'em
-            </div>
-          </div>
-      </div>
-      <div class="col-md-4">
-        <img class ="img-responsive" src="http://ngm.nationalgeographic.com/visions-of-earth/img/1012-tightrope-walking-cable-zugspite-mountain-670.jpg">
-        <div class="panel panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title">Documents</h3>
-            </div>
-            <div class="panel-body">
-              <ul>
-                <li>Upload</li>
-                <li>Comment</li>
-                <li>Revise</li>
-              </ul>
-            </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <img class="img-responsive" src="http://ngm.nationalgeographic.com/visions-of-earth/img/1213-japanese-macaque-closeup-670.jpg">
+      <div class="row">
+        <div class="col-md-4">
+          <img class ="img-responsive" src="http://ngm.nationalgeographic.com/visions-of-earth/img/1213-poland-skiers-lining-up-670.jpg">
           <div class="panel panel-info">
               <div class="panel-heading">
-                <h3 class="panel-title">Comments</h3>
+                <h3 class="panel-title">Tasks</h3>
               </div>
-                  <div class="panel-body">
-                    <ul>
-                        <li>Comment on tasks and documents</li>
-                        <li>Get email notifications</li>
-                      </ul>
-                  </div>
-          </div>
-      </div>
-    </div>
-
-        <div class= "home_quotes">
-          <% @quotes.each do |quote| %>
-            <%= quote %>
-          <% end %>
+              <div class="panel-body">
+                Grouped by projects and lists. Just the way you like 'em
+              </div>
+            </div>
         </div>
-</div>
+        <div class="col-md-4">
+          <img class ="img-responsive" src="http://ngm.nationalgeographic.com/visions-of-earth/img/1012-tightrope-walking-cable-zugspite-mountain-670.jpg">
+          <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Documents</h3>
+              </div>
+              <div class="panel-body">
+                <ul>
+                  <li>Upload</li>
+                  <li>Comment</li>
+                  <li>Revise</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive" src="http://ngm.nationalgeographic.com/visions-of-earth/img/1213-japanese-macaque-closeup-670.jpg">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Comments</h3>
+                </div>
+                    <div class="panel-body">
+                      <ul>
+                          <li>Comment on tasks and documents</li>
+                          <li>Get email notifications</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+      </div>
+          <div class= "home_quotes">
+            <p>
+              <% @quotes.each do |quote| %>
+                <p><%= quote.first %></p>
+                <p><%= quote.last %></p>
+              <% end %>
+            </p>
+          </div>
+  </div>
