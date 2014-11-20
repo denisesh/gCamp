@@ -2,9 +2,9 @@ class WelcomeController < ApplicationController
 
   def home
     @quotes =[
-      ["\"Failure is not an option. Everyone has to succeed.\"", "- Arnold Schwarzenegger"],
-      ["\"Your time is limited, so don't waste it living someone else's life.\"", "- Steve Jobs"],
-      ["\"Better Ingredients, Better Pizza.\"", "- Papa John"],
+      ["\"The voyage of the best ship is a zigzag line of a hundred tacks.\"", "- Ralph Waldo Emerson"],
+      ["\"We were put on this earth to make things.\"", "- W.H. Auden"],
+      ["\"Failure is the opportunity to begin again, more intelligently.\"", "- Henry Ford"],
     ]
   end
 
