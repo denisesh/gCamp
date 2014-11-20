@@ -23,7 +23,7 @@
         <img class ="img-responsive" src="http://ngm.nationalgeographic.com/visions-of-earth/img/1012-tightrope-walking-cable-zugspite-mountain-670.jpg">
         <div class="panel panel-info">
             <div class="panel-heading">
-              <h3 class="panel-title">Documents and Comments</h3>
+              <h3 class="panel-title">Documents</h3>
             </div>
             <div class="panel-body">
               <ul>
@@ -36,20 +36,23 @@
       </div>
       <div class="col-md-4">
         <img class="img-responsive" src="http://ngm.nationalgeographic.com/visions-of-earth/img/1213-japanese-macaque-closeup-670.jpg">
-      <div class="panel panel-info">
-          <div class="panel-heading">
-            <h3 class="panel-title">Tasks</h3>
+          <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Comments</h3>
+              </div>
+                  <div class="panel-body">
+                    <ul>
+                        <li>Comment on tasks and documents</li>
+                        <li>Get email notifications</li>
+                      </ul>
+                  </div>
           </div>
-          <div class="panel-body">
-            <ul>
-                <li>Comment on tasks and documents</li>
-                <li>Get email notifications</li>
-              </ul>
-          </div>
-        </div>
       </div>
     </div>
 
-
-
+        <div class= "home_quotes">
+          <% @quotes.each do |quote| %>
+            <%= quote %>
+          <% end %>
+        </div>
 </div>

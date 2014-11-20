@@ -24,6 +24,11 @@
 
 <%= yield =%>
 
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+  <div class="container">
+    <p><%= link_to 'About', about_path %>  |  <%= link_to 'Terms', terms_path %></p>
+  </div>
+</nav>
 
 
 </body>
