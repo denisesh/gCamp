@@ -1,35 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>GCamp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<nav class="navbar navbar-fixed-top navbar-inverse navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">gCamp</a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-<%= yield =%>
-
-<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-  <div class="container">
-    <p><%= link_to 'About', about_path %>  |  <%= link_to 'Terms', terms_path %></p>
-  </div>
-</nav>
-
-
-</body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+      <title>GCamp</title>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <%= csrf_meta_tags %>
+  </head>
+    <body>
+      <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <%= link_to 'gCamp','/', class:'navbar-brand' %>
+            <!-- <a class="navbar-brand" href="#">gCamp</a> -->
+          </div>
+      </nav>
+      <div class="container">
+        <%= yield =%>
+        <footer class="bottom-nav">
+            <%= link_to 'About', about_path, class:'navbar-brand' %><%= link_to 'Terms', terms_path, class:'navbar-brand' %>
+        </footer>
+      </div>
+    </body>
 </html>
