@@ -1,3 +1,4 @@
+
   <div class="jumbotron">
         <h1>gCamp</h1>
           <p style="margin-top: 25px">Your life, organized.</p>
@@ -39,10 +40,11 @@
         </div>
       </div>
           <div class= "home_quotes">
-            <p>
               <% @quotes.each do |quote| %>
-                <p><%= quote.first %></p>
-                <p><%= quote.last %></p>
+                <blockquote>
+                  <p class="lead"><%= quote.first %></p>
+                  <p><em><%= quote.last %></em></p>
+                </blockquote>
               <% end %>
             </p>
           </div>
