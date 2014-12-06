@@ -17,6 +17,11 @@ class TasksController < ApplicationController
     @task = Task.new
   end
 
+  def completed
+    @task = Task.all.where(completed: true)
+    render :index
+  end
+
   # GET /tasks/1/edit
   def edit
   end
@@ -69,6 +74,6 @@ class TasksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def task_params
-      params.require(:task).permit(:description)
+      params.require(:task).permit(:description, :completed)
     end
 end

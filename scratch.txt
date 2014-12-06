@@ -1,7 +1,41 @@
 <hr>
+<put into a container>
 <footer class="list-inline">
     <%= link_to 'About', about_path, class:'navbar-brand' %>|
     <%= link_to 'Terms', terms_path, class:'navbar-brand' %>|
     <%= link_to 'FAQ', faq_path, class:'navbar-brand' %>
 </footer>
 </div>
+
+put things in containers
+
+for the pictures put each of the 3 intoa  row
+for the text put each of the texts into their own rows with panel
+
+for images row
+div class col md-4
+panel panel-default
+image
+div
+div
+
+
+for text row
+col-md-4
+div class panel panel-primary panel-height
+title TASKS
+do this for each of the wordy parts
+
+Current State,Estimate,Labels,Title,Description
+"mvp,crud",bootstrapify tasks index page,"http://getbootstrap.com/css/#tables - ![Tasks - index](https://galvanize.mybalsamiq.com/mockups/2349052.png?key=dd6f91232218fa4d6cbf663738e10e0cfca3e151)"
+"mvp,crud",bootstrapify tasks form,"http://getbootstrap.com/css/#forms ![Tasks - new](https://galvanize.mybalsamiq.com/mockups/2349046.png?key=dd6f91232218fa4d6cbf663738e10e0cfca3e151)"
+"mvp,crud",bootstrapify task show page,"![Tasks - new](https://galvanize.mybalsamiq.com/mockups/2349061.png?key=dd6f91232218fa4d6cbf663738e10e0cfca3e151)"
+"mvp,crud",bootstrapify the flash message,"http://getbootstrap.com/components/#alerts .alert.alert-success"
+
+
+trying to figure out how to do the Edit Task in the _form page
+
+put this code in <div class="actions">
+masssive errors
+<%= f.submit "Update Task", edit_task_path(task) class:"btn btn-primary" %>
+<%= link_to "cancel", @task, class:"btn btn-default" %>
