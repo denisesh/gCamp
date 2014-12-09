@@ -16,16 +16,30 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.panel-body {
+  min-height: 8em;
+}
+
 body {
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 60px;
+}
+img {
+  padding-bottom: 10px
 }
 
 footer{
   height: 3em;
 }
 
+tr {
+  border-top: 1px solid #dddddd;
+}
+tr:first-child {border-top: none;}
 
+a[disabled] {
+  color: #000000
+}
 // body {
 //   padding: 0;
 //   background: #dddddd;
