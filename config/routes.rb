@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :users
+
   resources :tasks
 
   get 'incomplete_tasks' => 'tasks#incomplete'
