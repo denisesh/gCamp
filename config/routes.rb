@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :tasks
 
+  get 'incomplete_tasks' => 'tasks#incomplete'
+
   root 'welcome#home'
 
   get 'about' => 'welcome#about'

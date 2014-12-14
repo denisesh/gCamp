@@ -22,6 +22,11 @@ class TasksController < ApplicationController
     render :index
   end
 
+  def incomplete
+    @tasks = Task.all.where(completed: false)
+    render :index
+  end
+
   # GET /tasks/1/edit
   def edit
   end

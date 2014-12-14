@@ -1,5 +1,7 @@
 <div class = 'page-header'>
   <div class="pull-right">
+    <%= link_to "All", tasks_path %>
+    <%= link_to "Incomplete", incomplete_tasks_path %>
     <%= link_to "New Task", new_task_path, class: "btn btn-info" %>
   </div>
   <h1>Listing tasks</h1>
