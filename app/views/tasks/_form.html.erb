@@ -22,11 +22,20 @@
     </div>
   </div>
 
+  <div class = "row">
+    <div class="form-group">
+      <%= f.label :due_date, class:"col-sm-2 control-label" %><br>
+      <div class='col-sm-8'>
+      <%= f.date_field :due_date, class:"form-control" %>
+      </div>
+    </div>
+  </div>
+
   <div class="row">
     <div class="form-group">
       <div class="col-sm-2 col-sm-offset-1">
-      <%= f.check_box :completed, class:"col-sm-2 checkbox" %>
-      <%= f.label :completed %>
+        <%= f.check_box :completed, class:"col-sm-2 checkbox" %>
+        <%= f.label :completed %>
       </div>
     </div>
   </div>
