@@ -1,3 +1,16 @@
+  <div id="notice">
+    <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+  </div>
+
+
+  <div class='page-header'>
+    <div class="pull-right">
+      <%= link_to 'Create New User', new_user_path, class: "btn btn-info" %>
+    </div>
+  </div>
+
   <div>
     <h1> Listing Users </h1>
   </div>
